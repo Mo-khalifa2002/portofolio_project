@@ -1,0 +1,32 @@
+@import "../../App.scss";
+
+.portofolio {
+  .por-section{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card {
+    width: 25rem;
+    background-color: $bg-variant;
+    border-radius: 2rem;
+    padding: 1rem;
+    cursor: default;
+    transition: $transition;
+    p {
+      margin-left: -5px !important;
+    }
+    img {
+      border-radius: 1rem;
+      margin-bottom: -8px !important;
+    }
+    .por-buttons {
+      margin-left: -5px !important;
+      margin-top: 2rem !important;
+    }
+    &:hover {
+      border: 1px solid $primary;
+      background-color: transparent;
+    }
+  }
+}

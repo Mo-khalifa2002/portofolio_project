@@ -1,0 +1,55 @@
+@import "../../App.scss";
+
+.serve {
+  margin-top: 15rem !important;
+  .design-comp {
+    display: flex;
+    justify-content: space-around;
+  }
+  .ser-icon {
+    color: $primary;
+  }
+
+  .design-section {
+    background-color: $bg-variant;
+    position: relative;
+    border-radius: 0 0 2rem 2rem;
+    height: fit-content;
+    cursor: default;
+    transition: $transition;
+    border: 1px solid $primary;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 8px 0px;
+    gap: 3rem;
+    &:hover {
+      background-color: transparent !important;
+      box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 2px,
+        rgb(255, 255, 255) 0px 0px 0px 1px;
+    }
+    .ser-header {
+      box-shadow: rgba(36, 31, 31, 0.16) 0px 1px 2px,
+        rgb(36, 35, 35) 0px 0px 0px 1px;
+      background-color: $white;
+      color: $primary;
+      border-radius: 0 0 2rem 2rem;
+      width: 100%;
+      padding: 1.5rem;
+      position: absolute;
+      left: 0;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .design-section {
+    width: 70% !important;
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .ser-header {
+    margin-bottom: 13rem !important;
+  }
+  design-section > .ser-par {
+    margin-top: 3rem !important;
+  }
+}

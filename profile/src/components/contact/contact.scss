@@ -1,0 +1,81 @@
+@import "../../App.scss";
+
+.contact {
+  .cardd {
+    background-color: $bg-variant;
+    // width: fit-content;
+    padding: 1rem !important;
+    border-radius: 1rem !important;
+    max-width: 300px;
+    transition: $transition;
+    &:hover {
+      border: 1px solid $primary;
+      background: transparent;
+      cursor: default;
+      box-shadow: rgba(181, 181, 255, 0.25) 0px 5px 10px -2px,
+        rgba(255, 255, 255, 0.3) 0px 10px 10px -30px,
+        rgba(104, 180, 255, 0.35) 0px -2px 6px 0px inset;
+    }
+  }
+  .contact-left-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    .name,
+    .email {
+      padding: 1.5rem;
+      width: 100%;
+      background-color: transparent;
+      border-radius: 1rem;
+      color: $white;
+      outline: none;
+      border: 1px solid $primary;
+      text-align: left !important;
+      &:hover {
+        border: 2px dashed $white;
+      }
+      &:focus {
+        border: 3px solid $primary;
+        box-shadow: rgba(181, 181, 255, 0.25) 0px 5px 10px -2px,
+          rgba(255, 255, 255, 0.3) 0px 10px 10px -30px,
+          rgba(104, 180, 255, 0.35) 0px -2px 6px 0px inset;
+      }
+      &::placeholder {
+        text-align: left !important;
+        color: $light;
+      }
+    }
+    .input-message {
+      padding: 9rem 0 9rem 1rem;
+      width: 100%;
+      background-color: transparent;
+      border-radius: 1rem;
+      color: $white;
+      text-transform: capitalize;
+      outline: none;
+      border: 1px solid $primary;
+      text-align: left !important;
+      transition: $transition;
+      &:hover {
+        border: 2px dashed $white;
+      }
+      &:focus {
+        border: 3px solid $primary;
+        box-shadow: rgba(181, 181, 255, 0.25) 0px 5px 10px -2px,
+          rgba(255, 255, 255, 0.3) 0px 10px 10px -30px,
+          rgba(104, 180, 255, 0.35) 0px -2px 6px 0px inset;
+      }
+      &::placeholder {
+        text-align: left !important;
+        color: $light;
+      }
+    }
+  }
+  .contact-button {
+    text-align: left !important;
+    width: 100% !important;
+    font-weight: normal !important;
+  }
+}

@@ -1,0 +1,33 @@
+@import "../../App.scss";
+
+.nav-icons {
+  z-index: 1000;
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.7rem 1.7rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+  transition: $transition;
+  a {
+    color: $light !important;
+    cursor: pointer;
+    padding: 0.3rem 0.9rem;
+    border-radius: 1rem;
+    transition: $transition;
+    &:hover {
+      background: $bg;
+      color: $primary !important;
+    }
+    &:focus {
+      background: $bg;
+      color: $primary !important;
+    }
+    .active {
+      background: $bg !important;
+      color: $primary !important;
+    }
+  }
+}

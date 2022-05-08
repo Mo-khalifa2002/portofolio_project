@@ -1,0 +1,49 @@
+@import "../../App.scss";
+
+.header {
+  height: 100vh;
+  position: relative;
+  .front-end {
+    color: $light;
+  }
+
+  .me {
+    width: 22rem;
+    padding: 1.3rem;
+    max-height: 33rem;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 33rem;
+    border-radius: 12rem 12rem 0 0;
+    background: linear-gradient($primary, transparent);
+  }
+  .header-icons {
+    flex-direction: column;
+    bottom: 3rem;
+    left: 13rem;
+    &::after {
+      content: "";
+      width: 1px;
+      background: $primary;
+      height: 2.5rem;
+      margin-top: 1rem;
+    }
+  }
+  .scroll-down {
+    color: $primary;
+    bottom: 8.5rem;
+    right: 13rem;
+    transform: rotate(90deg);
+    transition: $transition;
+    cursor: pointer;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+@media screen and (max-width: 1499px) {
+  .header-icons,
+  .scroll-down {
+    display: none !important;
+  }
+}

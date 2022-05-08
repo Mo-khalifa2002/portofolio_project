@@ -1,0 +1,38 @@
+@import "../../App.scss";
+
+.experience-section {
+  .mexp {
+    color: $primary !important;
+  }
+  margin-top: 9rem !important;
+  .right-exp {
+    background-color: $bg-variant;
+    border: 1px solid $primary;
+    transition: $transition;
+    padding: 2.5rem;
+    border-radius: 2rem;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 2px 8px 0px;
+
+    &:hover {
+      background-color: transparent;
+      box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 2px,
+        rgb(255, 255, 255) 0px 0px 0px 1px;
+    }
+  }
+  .exp-content {
+    flex-direction: column;
+    h3 {
+      position: relative;
+    }
+  }
+  .exp-icon {
+    position: absolute;
+    left: 5rem;
+    margin-top: 7px;
+    font-size: 25px;
+    color: $primary;
+  }
+  .level-exp {
+    color: $light;
+  }
+}
