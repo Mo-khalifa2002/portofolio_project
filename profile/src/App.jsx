@@ -8,20 +8,21 @@ import Portofolio from "./components/portofolio/Portofolio";
 import Testemonials from "./components/testemonials/Testemonials";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import { work, moreWork } from "./Data.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MoreWork from "./components/portofolio/MoreWork";
+import Home from "./Home";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Nav />
-      <About />
-      <Experience />
-      <Services />
-      <Portofolio />
-      <Testemonials />
-      <Contact />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home work={work} />} />
+          <Route path="more" element={<MoreWork moreWork ={moreWork}/>} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

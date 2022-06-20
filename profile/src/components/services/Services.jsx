@@ -7,12 +7,14 @@ const Services = () => {
     <div>
       <section id="services" className="serve">
         <h5 className="my-2 text-center text-capitalize">what i offer</h5>
-        <h2 className="mb-5 text-center fw-bold text-capitalize">services</h2>
+        <h2 className="mb-5 text-center fw-bold text-capitalize">
+          services "just design 🤨"
+        </h2>
         <div className="container">
           <div className="row design-comp">
             <div className="design-section col-md-3 col-sm-12">
               <h3 className="text-capitalize ser-header text-center">
-                ui/ux design
+                Web Development
               </h3>
               <ul className="design">
                 <li className="d-flex mt-4 gap-3 align-items-start">
@@ -55,7 +57,7 @@ const Services = () => {
             </div>
             <div className="design-section col-md-3 col-sm-12">
               <h3 className="text-capitalize ser-header text-center">
-                web development
+                Web Development
               </h3>
               <ul className="design">
                 <li className="d-flex mt-3 gap-3 align-items-start">
@@ -110,7 +112,7 @@ const Services = () => {
             </div>
             <div className="design-section col-md-3 col-sm-12">
               <h3 className="text-capitalize ser-header text-center">
-                content creator
+                Web Development
               </h3>
               <ul className="design">
                 <li className="d-flex mt-4 gap-3 align-items-start">
